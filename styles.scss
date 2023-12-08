@@ -1,0 +1,24 @@
+body{
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100dvw;
+    h1{
+        font-family: "Inter", sans-serif;
+        color: white;
+    }
+    article{
+        display: flex;
+        gap: 2rem;
+        margin-top: 50px;
+        div{
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background: pink;
+        }
+    }
+}
