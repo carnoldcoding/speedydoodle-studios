@@ -1,14 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 * {
   margin: 0;
   padding: 0;
   outline: 0;
   box-sizing: border-box;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Itim", cursive;
 }
 
 body {
-  background: black;
+  background: rgb(0, 26, 97);
+  background: linear-gradient(180deg, rgb(40, 50, 73) 0%, rgb(21, 25, 29) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100dvh;
+  padding-bottom: 100px;
 }
 
 header {
@@ -21,6 +28,7 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
+  border-bottom: 5px solid #ffC312;
 }
 header::after {
   content: "";
@@ -67,6 +75,72 @@ header .contact a {
 }
 header .contact a:hover {
   text-decoration: underline;
+}
+
+.subtitle {
+  padding: 0px 10px;
+  margin-top: 25px;
+  width: 100%;
+}
+.subtitle p {
+  color: white;
+  text-align: center;
+  font-size: clamp(13px, 4vw, 40px);
+}
+
+article[class=books] {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+article[class=books] .books-wrapper {
+  max-width: 920px;
+  display: flex;
+  gap: clamp(60px, 5vw, 100px);
+}
+@media screen and (max-width: 920px) {
+  article[class=books] .books-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  article[class=books] .books-wrapper .book > .cover {
+    max-width: 90%;
+  }
+}
+article[class=books] .books-wrapper .book {
+  display: flex;
+  justify-content: center;
+}
+article[class=books] .books-wrapper .book .cover {
+  height: clamp(300px, 60vw, 400px);
+  width: clamp(300px, 60vw, 400px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1.5px solid #ffC312;
+  border-radius: 10px;
+  box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+article[class=books] .books-wrapper .book .cover a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
+  background: url("./assets/amazon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 60px;
+  width: 125px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+article[class=books] .books-wrapper .book.one .cover {
+  background-image: url("./assets/book1-cover.jpg");
+}
+article[class=books] .books-wrapper .book.two .cover {
+  background-image: url("./assets/book2-cover.jpg");
 }
 
 /*# sourceMappingURL=styles.css.map */
