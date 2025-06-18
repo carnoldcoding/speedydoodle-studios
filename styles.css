@@ -98,6 +98,7 @@ article[class=books] .books-wrapper {
   max-width: 920px;
   display: flex;
   gap: clamp(60px, 5vw, 100px);
+  justify-content: center;
 }
 @media screen and (max-width: 920px) {
   article[class=books] .books-wrapper {
