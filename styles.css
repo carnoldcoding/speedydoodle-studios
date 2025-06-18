@@ -142,5 +142,8 @@ article[class=books] .books-wrapper .book.one .cover {
 article[class=books] .books-wrapper .book.two .cover {
   background-image: url("./assets/book2-cover.jpg");
 }
+article[class=books] .books-wrapper .book.three .cover {
+  background-image: url("https://m.media-amazon.com/images/I/91F-zf8S+VL._SL1500_.jpg");
+}
 
 /*# sourceMappingURL=styles.css.map */
